@@ -1,4 +1,4 @@
-if SHIELD_MAYPAD
+if SHIELD_MAYPAD4X5
 
 config ZMK_KEYBOARD_NAME
     default "May Pad 4x5"
