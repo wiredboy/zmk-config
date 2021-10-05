@@ -16,7 +16,7 @@
         &kp ESC     &kp Q   &kp DOT     &kp SLASH
         &kp N1      &kp N2  &kp N3      &kp MINUS
         &kp N4      &kp N5  &kp N6      &kp PLUS
-        &kp N&      &kp N8  &kp N9      &kp EQUAL
+        &kp N7      &kp N8  &kp N9      &kp EQUAL
         &kp STAR    &kp N0  &kp HASH    &kp RET
             >;
 
