@@ -13,11 +13,11 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
 //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
             bindings = <
-    &kp ESC     &kp Q   &kp DOT     &kp SLASH
-    &kp N1      &kp N2  &kp N3      &kp MINUS
-    &kp N4      &kp N5  &kp N6      &kp PLUS
-    &kp N&      &kp N8  &kp N9      &kp EQUAL
-    &kp STAR    &kp N0  &kp HASH    &kp RET
+        &kp ESC     &kp Q   &kp DOT     &kp SLASH
+        &kp N1      &kp N2  &kp N3      &kp MINUS
+        &kp N4      &kp N5  &kp N6      &kp PLUS
+        &kp N&      &kp N8  &kp N9      &kp EQUAL
+        &kp STAR    &kp N0  &kp HASH    &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
