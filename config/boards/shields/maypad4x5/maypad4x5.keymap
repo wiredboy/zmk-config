@@ -4,7 +4,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define BTOOTH      1
+#define BTOOTH  1
+#define T9L     2
+#define T9M     3
+#define T9R     4
+#define T9SP    5
 
 /{
     keymap {
@@ -12,11 +16,11 @@
 
         default_layer {
             bindings = <
-                &mo BTOOTH      &kp Q       &kp DOT     &kp SLASH
-                &kp N1          &kp N2      &kp N3      &kp MINUS
-                &kp N4          &kp N5      &kp N6      &kp PLUS
-                &kp N7          &kp N8      &kp N9      &kp EQUAL
-                &kp STAR        &kp N0      &kp HASH    &kp RET
+                &mo BTOOTH      &kp DOT         &kp SLASH       &kp BSPC
+                &lt T9SP N1     &kp N2          &kp N3          &kp MINUS
+                &kp N4          &kp N5          &kp N6          &kp PLUS
+                &kp N7          &kp N8          &kp N9          &kp EQUAL
+                &lt T9L STAR    &lt T9M N0      &lt T9R HASH    &kp RET
             >;
         };
 
@@ -29,5 +33,46 @@
                 &bootloader     &kp N0              &kp HASH        &bt BT_CLR
             >;
         };
+
+        T9L_layer {
+            bindings = <
+                &kp ESC        &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2
+                &kp N1         &kp A              &kp D          &kp MINUS
+                &kp G          &kp J              &kp M          &out OUT_USB
+                &kp P          &kp T              &kp W          &out OUT_BLE
+                &bootloader    &kp PLUS           &kp HASH       &bt BT_CLR
+            >;
+        };
+
+        T9M_layer {
+            bindings = <
+                &kp ESC        &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2
+                &kp N1         &kp B              &kp E          &kp MINUS
+                &kp H          &kp K              &kp N          &out OUT_USB
+                &kp Q          &kp U              &kp X          &out OUT_BLE
+                &bootloader    &kp N0             &kp HASH       &bt BT_CLR
+            >;
+        };
+
+        T9R_layer {
+            bindings = <
+                &kp ESC        &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2
+                &kp N1         &kp C              &kp F          &kp MINUS
+                &kp I          &kp L              &kp O          &out OUT_USB
+                &kp R          &kp V              &kp Y          &out OUT_BLE
+                &bootloader    &kp N0             &kp HASH       &bt BT_CLR
+            >;
+        };
+
+        T9SP_layer {
+            bindings = <
+                &kp ESC       &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2
+                &kp N1        &kp LPAR            &kp RPAR        &kp MINUS
+                &kp EXCL      &kp DLLR            &kp PRCNT       &out OUT_USB
+                &kp AT        &kp UNDER           &kp PIPE        &out OUT_BLE
+                &kp LT        &kp GT              &kp TILDE       &bt BT_CLR
+            >;
+        };
+
     };
 };
