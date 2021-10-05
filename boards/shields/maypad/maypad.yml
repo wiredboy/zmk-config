@@ -1,0 +1,9 @@
+file_format: "1"
+id: may_pad4x5
+name: may_pad4x5
+type: shield
+url: https://github.com/wiredboy/may_pad4x5
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys

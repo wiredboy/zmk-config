@@ -1,0 +1,2 @@
+config SHIELD_MAYPAD
+    def_bool $(shields_list_contains,maypad)
