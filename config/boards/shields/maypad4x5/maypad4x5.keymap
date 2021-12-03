@@ -81,7 +81,7 @@
                 &trans        &trans              &trans          &trans
                 &trans        &trans              &trans          &trans
                 &trans        &trans              &trans          &trans
-                &kp LC(LS(M)) &kp LC(LS(E))       &kp LC(LS(K))   &kp LC(LS(H))
+                &kp LEFT_COMMAND(LS(M)) &kp LEFT_COMMANDLS(E))       &kp LEFT_COMMAND(LS(K))   &kp LEFT_COMMAND(LS(H))
             >;
         };
 
