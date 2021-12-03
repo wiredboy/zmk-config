@@ -27,7 +27,7 @@
 
         prefs_layer {
             bindings = <
-                &trans         &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2
+                &none           &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2
                 &tog TEAMS      &kp N2              &kp N3          &kp MINUS
                 &kp N4          &kp N5              &kp N6          &out OUT_USB
                 &kp N7          &kp N8              &kp N9          &out OUT_BLE
@@ -41,7 +41,7 @@
                 &kp N1         &kp A              &kp D          &kp MINUS
                 &kp G          &kp J              &kp M          &out OUT_USB
                 &kp P          &kp T              &kp W          &out OUT_BLE
-                &trans         &kp PLUS           &kp HASH       &bt BT_CLR
+                &none          &kp PLUS           &kp HASH       &bt BT_CLR
             >;
         };
 
@@ -77,10 +77,10 @@
 
         TEAMS_layer {
             bindings = <
-                &tog TEAMS          &trans           &trans          &trans
-                &trans              &trans           &trans          &trans
-                &trans              &trans           &trans          &trans
-                &trans              &trans           &trans          &trans
+                &tog TEAMS          &none            &none           &none
+                &none               &none            &none           &none
+                &none               &none            &none           &none
+                &none               &none            &none           &none
                 &kp LGUI(LS(M))     &kp LGUI(LS(E))  &kp LGUI(LS(K)) &kp LGUI(LS(H))
             >;
         };
