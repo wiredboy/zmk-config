@@ -81,7 +81,7 @@
                 &none               &none            &none           &none
                 &none               &none            &none           &none
                 &none               &none            &none           &none
-                &kp LG(LS(M))       &kp LG(LS(E))    &kp LG(LS(K))   &kp LG(LS(H))
+                &kp LG(LS(A))       &kp LG(LS(V))    &kp LG(LS(K))   &kp LG(LS(H))
             >;
         };
 
